@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>stars</title>
+
+	<style type="text/css">
+
+		#stars{
+			height: 100px;
+			width: 100px;
+			background-image: url(star.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			position: absolute;
+		}
+
+
+		
+
+	</style>
+
+
+</head>
+<body>
+
+	<div id="stars"></div>
+
+<script type="text/javascript">
+	document.addEventListener("click", function makeStar(event){
+
+		// stars.style.left = event.clientX
+		// console.log will record the coordinates in the console
+
+		console.log(event.clientX);
+		console.log(event.clientY);
+
+		stars.style.left = event.clientX  - 50 + "px";
+		stars.style.top = event.clientY - 50 + "px";
+
+
+	})
+
+</script>
+
+</body>
+</html>

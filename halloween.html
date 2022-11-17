@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+
+	.softball{
+		width:100px;
+		height:100px;
+		background-image:url(softball.png)
+			;
+		background-size:contain;
+		display:inline-block;
+		background-repeat: no-repeat;
+	}
+
+	.softball:hover{
+		background-color:blue;
+	}
+
+</style>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		function makeSoftball () {
+			let softball = document.createElement("div");
+			document.body.appendChild(softball);
+			softball.classList.add("softball")
+
+
+
+		}
+
+		setInterval(makeSoftball, 100)
+
+	</script>
+
+</body>
+</html>

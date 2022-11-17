@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>happy</title>
+
+	<style type="text/css">
+
+		#happy{
+			height: 300px;
+			width: 300px;
+			background-image: url(https://cdn.myportfolio.com/eb5d7870-77fd-45fe-b452-9ca4f3e4e9e2/2a525909-9c7f-4e0b-b4cc-b45e5948b0f3_rw_600.gif?h=7c11def54f28b4ae39a817cbc518dc55);
+			background-size: cover;
+			background-repeat: no-repeat;
+			position: absolute;
+		}
+
+	
+
+	</style>
+
+
+</head>
+<body>
+
+	<div id="happy"></div>
+
+<script type="text/javascript">
+	document.addEventListener("click", function makeHappy(event){
+
+
+		console.log(event.clientX);
+		console.log(event.clientY);
+
+		happy.style.left = event.clientX  - 50 + "px";
+		happy.style.top = event.clientY - 50 + "px";
+
+
+	})
+
+</script>
+
+</body>
+</html>
