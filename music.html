@@ -12,6 +12,8 @@
 	2. if the click is even then do one thing
 	3. if the click is off then do another thing -->
 
+	<audio src = baby.mp3 id=song></audio>
+
 <script type ="text/javascript">
 	let counter= 0;
 
@@ -20,11 +22,14 @@
 		counter = counter + 1;
 		console.log(counter)
 		if (counter%2==0) {
-			document.body.style.backgroundColor = "blue"
+			document.body.style.backgroundColor = "blue";
+			song.play()
+
 		}
 
 		if (counter%2==1) {
-			document.body.style.backgroundColor = "white"
+			document.body.style.backgroundColor = "white";
+			song.pause()
 		}
 
 	})
